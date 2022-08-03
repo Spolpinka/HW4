@@ -1,12 +1,12 @@
 public class HW4 {
     public static void main(String[] args) {
-        int year = 2300;
-        if (year%4 == 0 && year%100 != 0){
-            System.out.println(year + " год является високосным");
-        } else if (year%400 == 0){
-            System.out.println(year + " год является високосным");
+        int deliveryDistance = 95;
+        if (deliveryDistance <= 20){
+            System.out.println("Потребуется дней: 1");
         } else {
-            System.out.println(year + " год не является високосным");
+            System.out.println("Потребуется дней: " + (((deliveryDistance-20)/40)+2));
         }
+
+
     }
 }
